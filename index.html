@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400&700&800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
@@ -22,11 +22,12 @@
   <body>
     <main class="main-container">
       <section class="card-container">
-        <h1 class="card-title">Advice #<span id="advice-id"></span></h1>
+        <h1 class="card-title">Advice #<span id="advice-id">000</span></h1>
         <div class="advice-container">
-          &#8220;<span id="advice-text"
-            >Click The Dice Bellow To Generate An Advice .. Have Fun 😉.</span
-          >&#8221;
+          &ldquo;<span id="advice-text"
+            >It is easy to sit up and take notice, what's difficult is getting
+            up and taking action.</span
+          >&rdquo;
         </div>
         <picture class="devider-container">
           <source
@@ -36,12 +37,12 @@
           <source srcset="./images/pattern-divider-mobile.svg" />
           <img src="./images/pattern-divider-mobile.svg" alt="" />
         </picture>
+        <div class="btn-container">
+          <button id="generate-advice">
+            <img src="./images/icon-dice.svg" alt="" />
+          </button>
+        </div>
       </section>
-      <div class="btn-container">
-        <button id="generate-advice">
-          <img src="./images/icon-dice.svg" alt="" />
-        </button>
-      </div>
     </main>
     <script src="./script/app.js"></script>
   </body>

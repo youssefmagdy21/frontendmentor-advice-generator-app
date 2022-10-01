@@ -2,9 +2,9 @@
 :root {
   --clr-accent: hsl(150, 100%, 66%);
   --clr-primary: hsl(193, 38%, 86%);
-  --clr-bg: hsl(217, 19%, 24%);
-  --clr-cardbg: hsl(217, 19%, 38%);
-  --clr-dice: hsl(218, 23%, 16%);
+  --clr-bg: hsl(218, 23%, 16%);
+  --clr-cardbg: hsl(217, 19%, 24%);
+  --clr-dice: hsl(217, 19%, 38%);
   --ff-primary: "Manrope", sans-serif;
   --fs-primary: 28px;
   --fw-extra-bold: 800;
@@ -78,3 +78,37 @@ canvas {
 }
 
 /* *********************************** */
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--clr-bg);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-extra-bold);
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 22px;
+  padding: 40px 20px;
+  max-width: 340px;
+  background-color: var(--clr-cardbg);
+  border-radius: 10px;
+}
+.card-title {
+  color: var(--clr-accent);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.advice-container {
+  color: var(--clr-primary);
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+}
