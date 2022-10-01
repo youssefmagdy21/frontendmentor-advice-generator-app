@@ -1,18 +1,14 @@
 /* Variables */
-/* :root {
-  --clr-accent-400: ;
-  --clr-accent-100: ;
-  --clr-primary-400: ;
-  --clr-neutral-100: ;
-  --clr-neutral-900: ;
-
-  --ff-primary: ;
-  --ff-body: var(--ff-primary);
-  --ff-heading: ;
-
-  --fw-regular: 400;
-  --fw-bold: 700;
-} */
+:root {
+  --clr-accent: hsl(150, 100%, 66%);
+  --clr-primary: hsl(193, 38%, 86%);
+  --clr-bg: hsl(217, 19%, 24%);
+  --clr-cardbg: hsl(217, 19%, 38%);
+  --clr-dice: hsl(218, 23%, 16%);
+  --ff-primary: "Manrope", sans-serif;
+  --fs-primary: 28px;
+  --fw-extra-bold: 800;
+}
 
 /* Box sizing rules */
 *,
