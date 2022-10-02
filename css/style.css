@@ -38,6 +38,7 @@ html:focus-within {
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 /* Set core body defaults */
@@ -78,22 +79,22 @@ canvas {
 }
 
 /* *********************************** */
-.main-container {
+.flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.main-container {
   width: 100%;
   min-height: 100%;
   background-color: var(--clr-bg);
   font-family: var(--ff-primary);
   font-weight: var(--fw-extra-bold);
+  padding: 1.875rem 1.25rem 3.9375rem 1.25rem;
 }
 .card-container {
   position: relative;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   gap: 1.375rem;
   padding: 2.5rem 1.25rem 4.5625rem 1.25rem;
@@ -115,9 +116,6 @@ canvas {
 }
 .dice-container {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--clr-accent);
   width: 4.125rem;
   height: 4.125rem;
