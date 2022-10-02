@@ -1,7 +1,7 @@
 const baseURL = "https://api.adviceslip.com/advice";
 
 const getAdviceData = async () => {
-  const response = await fetch(baseURL);
+  const response = await fetch(baseURL, { cache: "no-cache" });
   // console.log(response);
   try {
     const data = await response.json();
