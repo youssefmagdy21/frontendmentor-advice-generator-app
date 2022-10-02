@@ -2,7 +2,7 @@ const baseURL = "https://api.adviceslip.com/advice";
 
 const getAdviceData = async () => {
   const response = await fetch(baseURL);
-  console.log(response);
+  // console.log(response);
   try {
     const data = await response.json();
     // console.log(data);
@@ -14,6 +14,7 @@ const getAdviceData = async () => {
 };
 
 async function generateAdvice(e) {
+  e.preventDefault();
   try {
     const adviceData = await getAdviceData();
     adviceID = adviceData.slip.id;
