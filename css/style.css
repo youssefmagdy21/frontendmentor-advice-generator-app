@@ -122,6 +122,12 @@ canvas {
   border-radius: 50%;
   bottom: -2.0625rem;
   transition: 0.8s;
+  border: none;
+}
+.dice-container:disabled,
+.dice-container:disabled:hover {
+  cursor: not-allowed;
+  opacity: 50%;
 }
 .dice-container:active {
   filter: drop-shadow(0rem 0rem 1rem var(--clr-accent));

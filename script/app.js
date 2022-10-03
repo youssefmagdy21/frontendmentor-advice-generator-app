@@ -14,13 +14,16 @@ const getAdviceData = async () => {
 };
 
 async function generateAdvice(e) {
-  e.preventDefault();
   try {
     const adviceData = await getAdviceData();
     adviceID = adviceData.slip.id;
     adviceText = adviceData.slip.advice;
     document.getElementById("advice-id").innerHTML = adviceID;
     document.getElementById("advice-text").innerHTML = adviceText;
+    this.disabled = true;
+    setTimeout(() => {
+      this.disabled = false;
+    }, 2125);
     // console.log("Data displayed successfully");
   } catch (err) {
     document.getElementById("advice-text").innerHTML =
