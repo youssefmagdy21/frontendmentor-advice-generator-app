@@ -23,7 +23,7 @@ async function generateAdvice(e) {
     this.disabled = true;
     setTimeout(() => {
       this.disabled = false;
-    }, 2125);
+    }, 2000);
     // console.log("Data displayed successfully");
   } catch (err) {
     document.getElementById("advice-text").innerHTML =
